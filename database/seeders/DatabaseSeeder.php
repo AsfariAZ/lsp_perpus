@@ -83,7 +83,7 @@ class DatabaseSeeder extends Seeder
             'isbn' => '0001',
             'j_buku_baik' => 87,
             'j_buku_rusak' => 3,
-            'foto' => '',
+            'foto' => 'foto-1.jpg',
         ]);
 
         Buku::create([
@@ -95,11 +95,11 @@ class DatabaseSeeder extends Seeder
             'isbn' => '0002',
             'j_buku_baik' => 80,
             'j_buku_rusak' => 10,
-            'foto' => '',
+            'foto' => 'foto-2.jpg',
         ]);
 
         Buku::create([
-            'judul' => 'Can u Hear Me',
+            'judul' => 'Can u Hear Me Right Now',
             'kategori_id' => 3,
             'penerbit_id' => 3, 
             'pengarang' => 'Lea Chiarachel',
@@ -107,7 +107,7 @@ class DatabaseSeeder extends Seeder
             'isbn' => '0003',
             'j_buku_baik' => 89,
             'j_buku_rusak' => 1,
-            'foto' => '',
+            'foto' => 'foto-3.jpg',
         ]);
 
         Peminjaman::create([
@@ -147,7 +147,7 @@ class DatabaseSeeder extends Seeder
 
         Pemberitahuan::create([
             'isi' => 'Server sudah Diperbaiki',
-            'status' => 'aktif',
+            'status' => 'nonaktif',
         ]);
 
         Pemberitahuan::create([

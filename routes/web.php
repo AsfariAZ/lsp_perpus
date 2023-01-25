@@ -63,7 +63,7 @@ Route::prefix('user')->group(function(){
             ->with("status", "danger")
             ->with("message", "Gagal menambah data");
     })->name('user.submit_peminjaman');
-    Route::get('/pengembalian', function(){
+    Route::get('/pengembalian', function(){ 
         return view('user.pengembalian');
     })->name('user.pengembalian');
     Route::get('/pesan', function(){

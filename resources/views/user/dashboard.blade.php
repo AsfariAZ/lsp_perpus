@@ -14,8 +14,8 @@
                         <div class="col-3">
                             <div class="card">
                                 <div class="card-header">
-                                    <img src="{{ asset($buku->foto) }}" style="height: 150px;object-fit: cover;"
-                                        class="card-img" alt="...">
+                                    <img src="{{ url('/img' . '/' . $buku->foto) }}" style="height: 150px;object-fit: cover;"
+                                    class="card-img" alt="{{ $buku->judul }}">
                                 </div>
                                 <div class="card-body">
                                     <h4 style="font-size: 24px; font-weight: bold">
